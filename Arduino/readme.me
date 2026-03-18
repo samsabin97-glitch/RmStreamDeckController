@@ -32,6 +32,70 @@ Board wiring,
 
 To operate this project simply connect arduino to pc and StreamDeck to pc, and start companion app
 next run this script at startup 
-    py C:\StreamDeck\Arduino\serial_bridge.py
 
-you may need to delete serial_bridge.lock if it fails at startup no worries it wil create a new lock File
+SERIAL BRIDGE - QUICK START
+===========================
+
+This app exposes HTTP endpoints to control an Arduino over serial.
+
+-----------------------------------
+STEP 1: BUILD (ONLY ONCE)
+-----------------------------------
+Double-click:
+    build_exe.bat
+
+This creates:
+    dist\serial_bridge.exe
+
+-----------------------------------
+STEP 2: RUN
+-----------------------------------
+Double-click:
+    run_serial_bridge.bat
+
+-----------------------------------
+STEP 3: TEST
+-----------------------------------
+Open PowerShell:
+
+    Invoke-RestMethod http://127.0.0.1:8787/health
+    Invoke-RestMethod http://127.0.0.1:8787/fwd_down
+    Invoke-RestMethod http://127.0.0.1:8787/fwd_up
+    Invoke-RestMethod http://127.0.0.1:8787/rev_down
+    Invoke-RestMethod http://127.0.0.1:8787/rev_up
+
+-----------------------------------
+ENDPOINTS
+-----------------------------------
+/fwd_down  -> Forward ON
+/fwd_up    -> STOP
+/rev_down  -> Reverse ON
+/rev_up    -> STOP
+/stop      -> STOP
+/health    -> Status info
+
+-----------------------------------
+CONFIGURATION (OPTIONAL)
+-----------------------------------
+Edit run_serial_bridge.bat:
+
+    SERIAL_BRIDGE_PORT1=\\.\COM3
+    SERIAL_BRIDGE_PORT2=\\.\COM4
+    SERIAL_BRIDGE_BAUD=9600
+
+-----------------------------------
+NOTES
+-----------------------------------
+- Runs on localhost only (firewall friendly)
+- Works from any folder (portable)
+- Logs and lock files auto-manage themselves
+- If Arduino disconnects, it will try to reconnect
+
+-----------------------------------
+TROUBLESHOOTING
+-----------------------------------
+Check log file (auto-created):
+
+    data\serial_bridge.log
+
+-----------------------------------

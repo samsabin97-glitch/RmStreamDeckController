@@ -1,0 +1,36 @@
+2026-03-18 02:13:08 | INFO | Starting serial_bridge | PID=12796
+2026-03-18 02:13:08 | INFO | APP_ROOT=C:\StreamDeck\Arduino\dist
+2026-03-18 02:13:08 | INFO | DATA_DIR=C:\StreamDeck\Arduino\dist\data
+2026-03-18 02:13:08 | INFO | Acquired lock: C:\StreamDeck\Arduino\dist\data\serial_bridge.lock
+2026-03-18 02:13:08 | INFO | Trying serial port \\.\COM3 @ 9600
+2026-03-18 02:13:08 | WARNING | Failed to open \\.\COM3: could not open port '\\\\.\\COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2026-03-18 02:13:08 | INFO | Trying serial port \\.\COM4 @ 9600
+2026-03-18 02:13:08 | WARNING | Failed to open \\.\COM4: could not open port '\\\\.\\COM4': PermissionError(13, 'Access is denied.', None, 5)
+2026-03-18 02:13:08 | ERROR | Startup serial open failed: Unable to open any configured serial port
+2026-03-18 02:13:08 | INFO | Removed lock file: C:\StreamDeck\Arduino\dist\data\serial_bridge.lock
+2026-03-18 02:13:23 | INFO | Starting serial_bridge | PID=2832
+2026-03-18 02:13:23 | INFO | APP_ROOT=C:\StreamDeck\Arduino\dist
+2026-03-18 02:13:23 | INFO | DATA_DIR=C:\StreamDeck\Arduino\dist\data
+2026-03-18 02:13:23 | INFO | Acquired lock: C:\StreamDeck\Arduino\dist\data\serial_bridge.lock
+2026-03-18 02:13:23 | INFO | Trying serial port \\.\COM3 @ 9600
+2026-03-18 02:13:23 | WARNING | Failed to open \\.\COM3: could not open port '\\\\.\\COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2026-03-18 02:13:23 | INFO | Trying serial port \\.\COM4 @ 9600
+2026-03-18 02:13:23 | WARNING | Failed to open \\.\COM4: could not open port '\\\\.\\COM4': PermissionError(13, 'Access is denied.', None, 5)
+2026-03-18 02:13:23 | ERROR | Startup serial open failed: Unable to open any configured serial port
+2026-03-18 02:13:23 | INFO | Removed lock file: C:\StreamDeck\Arduino\dist\data\serial_bridge.lock
+2026-03-18 02:15:10 | INFO | Starting serial_bridge | PID=6528
+2026-03-18 02:15:10 | INFO | APP_ROOT=C:\StreamDeck\Arduino\dist
+2026-03-18 02:15:10 | INFO | DATA_DIR=C:\StreamDeck\Arduino\dist\data
+2026-03-18 02:15:10 | INFO | Acquired lock: C:\StreamDeck\Arduino\dist\data\serial_bridge.lock
+2026-03-18 02:15:10 | INFO | Trying serial port \\.\COM3 @ 9600
+2026-03-18 02:15:10 | WARNING | Failed to open \\.\COM3: could not open port '\\\\.\\COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2026-03-18 02:15:10 | INFO | Trying serial port \\.\COM4 @ 9600
+2026-03-18 02:15:10 | INFO | Starting serial_bridge | PID=22888
+2026-03-18 02:15:10 | INFO | APP_ROOT=C:\StreamDeck\Arduino\dist
+2026-03-18 02:15:10 | INFO | DATA_DIR=C:\StreamDeck\Arduino\dist\data
+2026-03-18 02:15:10 | ERROR | Another instance is already running. PID=6528
+2026-03-18 02:15:10 | INFO | Removed lock file: C:\StreamDeck\Arduino\dist\data\serial_bridge.lock
+2026-03-18 02:15:12 | INFO | Opened serial port \\.\COM4
+2026-03-18 02:15:12 | INFO | Flask server starting on http://127.0.0.1:8787
+2026-03-18 02:15:14 | INFO | Sent command='REV' bytes=4 port=\\.\COM4
+2026-03-18 02:15:14 | INFO | Sent command='STOP' bytes=5 port=\\.\COM4
